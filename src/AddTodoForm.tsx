@@ -14,6 +14,7 @@ export const AddTodoForm: React.FC<Props> = ({addTodo}) => {
       value={text}
       onChange={e=> {setText(e.target.value)}} />
       <button type="submit"
+      aria-label="Add todo item"
       onClick={e=> {e.preventDefault();
       addTodo(text);
       setText('')}
