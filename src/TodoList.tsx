@@ -1,10 +1,6 @@
 import React from 'react';
+import { Props } from './interfaces';
 import { TodolistItem } from './TodolistItem';
-
-interface Props {
-  todos: Todo[];
-  toggleTodo: ToggleTodo;
-}
 
 export const TodoList: React.FC<Props> = ({ todos, toggleTodo }) => {
   return (
